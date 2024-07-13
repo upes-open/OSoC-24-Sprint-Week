@@ -11,22 +11,6 @@
 
 [![My Skills](https://skillicons.dev/icons?i=c,cpp,java,html,css,js,react,nodejs,express,fastapi,python,tensorflow,pytorch,opencv,aws,github,jenkins,docker,figma,linux,unity,cs)](https://skillicons.dev)<br>
 
-## Installation
-1. Install the NodeJS LTS (v20.14.0) [Click Here](https://nodejs.org/en/download/package-manager)
-
-2. Install the latest Python version (v3.12.4) [Click Here](https://www.python.org/downloads/)
-
-3. For Python based projects:
-    ```zsh
-    pip install -r requirements.txt
-    python3 app.py
-    ```
-4. Node based projects: 
-    ```zsh
-    cd <folder_name>
-    npm i
-    npm run dev
-    ```
 ## Setup
 1. Create a fork on the repository
 2. Clone the forked repository 
@@ -50,13 +34,14 @@
 ## Rules
 1. There are 2 level of toughness of the issues.
     1. Easy: The issues which are beginner level and easy to solve. **(10 points)**
-    2. Medium: The issues which are intermediate level and a bit tricky to solve. **(20 points)**
-    3. Hard: The issues which are advanced level and includes advanced concept of the technology stack to solve. **(30 points)**
+    2. Advanced: The issues which are advanced level and includes advanced concept of the technology stack to solve. **(15 points)**
 2. Direct commit on `main` branch is restricted. Creating a branch is mandatory.
 3. Pull request without the issue number will not be merged.
-4. Scores will be weekly declared on the OPEN's website and discord.
-5. All the discussion has to be performed on the [Discord](https://discord.com/invite/C6Zbecdz) sever or [GitHub](https://github.com/upes-open).
-6. Raising and solving a self issue will not be considered as legit contribution. Read [Innovation Center](#inovation-center)
+4. Fresh problem statements will be released every day. Check them out and get them assigned to you.
+5. Only the top 3 pull requests (PRs) will be accepted for each issue.
+6. Each participant can submit a maximum of 3 PRs
+7. All the discussion has to be performed on the [Discord](https://discord.com/invite/C6Zbecdz) sever or [GitHub](https://github.com/upes-open).
+8. Raising and solving a self issue or problem statement will not be considered as legit contribution. Read [Innovation Center](#inovation-center)
 
 ## Inovation Center
 > If a contributor has to introduce a new feature that is not mentioned in the issues, the conrributor has to discuss the feature with the repository maintainer. The maintainer will raise the issue and assign it to the respective contributor.
