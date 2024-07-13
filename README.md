@@ -6,7 +6,7 @@
 </div>
 
 ## Description
-
+Throughout the week, a series of problem statements will be released with points up for grabs. These problems will cover a diverse tech stack. Unlike project contributions, the PRs from the first three participants who submit quickest will be merged. However, each participant can only contribute to 3 problem statements.
 <h2>Technology Stack</h2>
 
 [![My Skills](https://skillicons.dev/icons?i=c,cpp,java,html,css,js,react,nodejs,express,fastapi,python,tensorflow,pytorch,opencv,aws,github,jenkins,docker,figma,linux,unity,cs)](https://skillicons.dev)<br>
