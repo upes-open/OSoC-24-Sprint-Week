@@ -2,15 +2,13 @@
 
 ## Problem Statement
 
-You must have seen our website (https://upes-open.org/), develop a better home page for the website. Refer to our current homepage and build upon that. The open website code is open source and available on our github, you can take inspiration from the code. 
-
-
+You must have seen our website (https://upes-open.org/), design a better home page for the website. Refer to our current homepage and build upon that. The open website code is open source and available on our github, you can take inspiration from the code. 
 
 ## Submission Guidelines
 
 1. **Create a Folder with Your Name:**
    - Inside the `issue<number>` create a folder with your name.
-   - Place all your code files inside this folder.
+   - Place your file inside this folder.
    - Include screenshots showing the successful execution of your work.
 
 2. **Submit a Pull Request:**
