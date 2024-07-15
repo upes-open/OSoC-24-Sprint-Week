@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot Interface</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #1d1c1c;
+    }
+    .navbar {
+      width: 100%;
+      background-color: #078002;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      position: fixed;
+      top: 0;
+      z-index: 1000;
+    }
+    .image-container {
+      margin-top: 70px; /* Adjusted for navbar height */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 20px 0;
+    }
+    .image-container img {
+      max-width: 200px;
+      height: auto;
+    }
+    .chat-container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px; /* Adjusted for image height */
+      height: 500px; /* Set a fixed height for the chat container */
+    }
+    .chat-history {
+      flex-grow: 1;
+      overflow-y: auto;
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 10px;
+      max-height: 400px; /* Set a max height for better usability */
+    }
+    .chat-message {
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 5px;
+      word-wrap: break-word;
+    }
+    .chat-message.user {
+      background-color: #dcf8c6;
+      align-self: flex-end;
+    }
+    .chat-message.bot {
+      background-color: #ececec;
+      align-self: flex-start;
+    }
+    .input-container {
+      display: flex;
+    }
+    .input-container input {
+      flex-grow: 1;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px 0 0 5px;
+      outline: none;
+    }
+    .input-container button {
+      padding: 10px;
+      border: none;
+      background-color: #28a745;
+      color: white;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+    }
+    .input-container button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    Adapt. Aware. Contribute.
+  </div>
+  <div class="image-container">
+    <img src="openlogo.png" alt="Center Image">
+  </div>
+  <div class="chat-container">
+    <div class="chat-history" id="chat-history"></div>
+    <div class="input-container">
+      <input type="text" id="user-input" placeholder="Type your message here...">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script>
+    async function sendMessage() {
+      const userInput = document.getElementById('user-input').value;
+      if (!userInput) return;
+
+      appendMessage(userInput, 'user');
+      document.getElementById('user-input').value = '';
+
+      const response = await fetch('/chat', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ userInput }),
+      });
+
+      const data = await response.json();
+      appendMessage(data.response, 'bot');
+    }
+
+    function appendMessage(text, sender) {
+      const chatHistory = document.getElementById('chat-history');
+      const messageElement = document.createElement('div');
+      messageElement.classList.add('chat-message', sender);
+      messageElement.textContent = text;
+      chatHistory.appendChild(messageElement);
+      chatHistory.scrollTop = chatHistory.scrollHeight;
+    }
+  </script>
+</body>
+</html>
