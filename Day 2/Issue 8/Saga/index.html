@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Editor</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="editor">
+        <div class="options">
+            <div class="item">
+                <label for="image-input">Insert file here:</label>
+                <input type="file" id="image-input">
+            </div>
+            <div class="item">
+                <label for="brightness">Brightness:</label>
+                <input type="range" id="brightness" min="0" max="200">
+            </div>
+            <div class="item">
+                <label for="contrast">Contrast:</label>
+                <input type="range" id="contrast" min="0" max="200">
+            </div>
+            <div class="item">
+                <label for="inversion">Inversion:</label>
+                <input type="range" id="inversion" min="0" max="100">
+            </div>
+            <div class="item">
+                <label for="saturation">Saturation:</label>
+                <input type="range" id="saturation" min="0" max="200">
+            </div>
+            <div class="item">
+                <label for="blur">Blur:</label>
+                <input type="range" id="blur" min="0" max="25">
+            </div>
+        </div>
+        <div class="image">
+            <canvas height="500" width="500" id="canvas"></canvas>
+        </div>
+    </div>
+</body>
+
+</html>
