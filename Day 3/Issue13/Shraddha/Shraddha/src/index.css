@@ -1,0 +1,30 @@
+html {
+  background-color: rgb(35, 35, 35);
+}
+
+.login {
+  display: flex;
+  margin-left: 400px;
+  margin-top: 200px;
+  flex-direction: column;
+  background-color: rgb(135, 136, 137);
+  width: 300px;
+  height: 250px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.login input {
+  width: 200px;
+  height: 20px;
+  margin-bottom: 10px;
+  margin-left: 40px;
+}
+
+.login button {
+  height: 30px;
+  width: 60px;
+  border-radius: 4px;
+  border: 1px solid rgb(35, 35, 35);
+  margin-left: 42px;
+}
