@@ -1,0 +1,102 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Welcome to OPEN Helpdesk!",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye"
+      ],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon.",
+        "OPEN waits for yet another time"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Thank's a lot!"
+      ],
+      "responses": [
+        "Happy to help!",
+        "Any time!",
+        "My pleasure"
+      ]
+    },
+    {
+      "tag": "details",
+      "patterns": [
+        "What is OPEN?",
+        "What does OPEN do?",
+        "What is this all about?"
+      ],
+      "responses": [
+        "At OPEN we aim to spread awareness about the advantages of open softwares.",
+        "Our dynamic team works on the premise of providing the right support and mentorship to students working on open source projects, thus leading towards various advancements and innovation in this line of work. Our community provides a holistic environment to explore, ideate and originate various solutions to real-world problems, thus contributing towards the welfare and advancement of our society while enhancing our communication, leadership, teamwork and soft skills."
+      ]
+    },
+    {
+      "tag": "principals",
+      "patterns": [
+        "Are there any principles?",
+        "What do you believe in?"
+      ],
+      "responses": [
+        "At OPEN, We believe in three key principals. Aware: We aim at spreading awareness about the advantage of using Open Source softwares over conventional proprietary softwares. Adopt: Spreading awareness is futile until and unless we motivate people to adopt the prevailing Open Source softwares in their work environment. Contribute: The whole concept of Open Source revolves around community which uses it and contributing to the community is always a matter of prestige."
+      ]
+    },
+    {
+      "tag": "verticals",
+      "patterns": [
+        "Are there any verticals?",
+        "How many sections of OPEN are there?"
+      ],
+      "responses": [
+        "We have two verticals: Collaboration vertical(the brain of our community) and Engagement vertical(Heart of our community)"
+      ]
+    },
+    {
+      "tag": "learning",
+      "patterns": [
+        "What is OPEN Learning"
+      ],
+      "responses": [
+        "OPEN learning is the one-stop destination of all the vibrant learners looking for the first step to excellence. OPEN learning not only lays the path by sharing tutorials, conducting workshops, but also walks along with you on that path by helping you create and contribute to the projects."
+      ]
+    },
+    {
+      "tag": "projects",
+      "patterns": [
+        "What are some projects made by OPEN?",
+        "Are there any projects made by OPEN?",
+        "Name some projects"
+      ],
+      "responses": [
+        "We have made the OPEN Website, Birthday Mailer, Lost and Found, MediaMorph and U-Hackathon"
+      ]
+    }
+  ]
+}
