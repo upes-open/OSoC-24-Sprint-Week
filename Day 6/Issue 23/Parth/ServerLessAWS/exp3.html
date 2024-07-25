@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet"  href="style3.css">
+    <title>Contact Me</title>
+
+    <style>
+body{
+  margin: 0;
+  font-family:'Inter',sans-serif;
+} 
+
+.box {
+    display: flex;
+}
+
+.info {
+  font-size: medium;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 60%;
+    text-align: left;
+}
+
+.text {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  bottom: 17px;
+  margin-left: 10px;
+}
+
+.text-content {
+    width: 40%; 
+    padding-left: 20px;
+}
+.text-content input, .text-content textarea{
+  background-color: #d1913c;
+  width: 100%;
+  height:100%;
+  border-radius: 10px;
+  color: white;
+}
+
+.rectangle {
+  padding: 5px;
+    width: 80%;
+    height: 20px;
+    margin-bottom: 5%;
+    border-radius: 10px;
+}
+
+.rectangle3 {
+  padding: 5px;
+  background-color: #ffd194;
+  width: 80%;
+  height: 200px;
+  margin-bottom: 5%;
+  border-radius: 10px;
+}
+button{
+  align-items: center;
+  height: 40px;
+  font-size:large ;
+  width: 150px;
+  color: #001510;
+  border-color: rgb(255, 255, 255);
+  border-width: 2px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background:linear-gradient(to right,#d1913c,#ffd194);
+  width: 15%;
+  border-radius: 10%;
+}
+ 
+
+a:hover {
+  text-decoration: underline;
+  color:light brown;
+}
+
+.input-field::placeholder {
+    color: transparent;
+  }
+  .input-field {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    color: black;
+  }
+  .input-field:focus + .form-label,
+.input-field:not(:placeholder-shown) + .form-label {
+  transform: translate(5px, 22px);
+  font-size: 14px;
+  color: black;
+  top:-55px;
+} 
+
+.input-field:focus + #message , 
+.input-field:not(:placeholder-shown) + #message{
+  transform: translate(5px, 22px);
+  top: -240px;
+}
+.form-label{
+    position: relative;
+    top:-22px;
+    left: 6px;
+    color: white;
+    transition: 0.3s;
+    pointer-events: none;
+  }
+  #message{
+    top:-200px;
+  }
+
+  #sendButton {
+    transition: transform 0.3s ease;
+  }
+
+  #sendButton:hover {
+    transform: scale(1.2);
+}
+
+#sendButton:active {
+    transform: scale(0.8);
+}
+
+.footer {
+    margin-top: 3px; 
+    background-color:#ffd194;
+    padding: 24px;
+    text-align: center;
+    position: sticky;
+    bottom:0;
+}
+    </style>
+</head>
+<body>
+  <div class="navbar_about">
+    <a style="position: absolute; left: 2%; top: -0.5%; font-size: 200% !important;" href="#">PARTH DHAVAN</a>
+      <a href="contact.html">Contact</a>
+      <a href="projects.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="index.html">Home</a>
+</div>
+<h1 style="text-align: center; color: #001510; font-weight: 600; font-size: 48px;">Contact Me</h1>
+<div class="box">
+  <div class="info">
+    <h2 style="margin-left: 20%;">Parth Dhavan</h2>
+      <img class="icon" src="location.png"><h3 class="text">University of Petroleum & Energy Studies </h3><br>
+      <img class="icon" src="location.png"><h3 class="text">Dehradun </h3><br>
+      <img class="icon" src="email-logo.png"><h3 class="text"><a href="www.parthdhavan2004@gmail.com">parthdhavan2004@gmail.com</a></h3><br>
+      <img class="icon" src="github-logo.png"><h3 class="text"><a target="_blank" href="//github.com/parthdhavan4">parthdhavan4</a> </h3><br>
+      <img class="icon" src="linkedin-logo.png"><h3 class="text"><a target="_blank" href= "https://www.linkedin.com/in/parth-dhavan-9103a3275/"> parth-dhavan</a></h3>
+  </div>
+  <div class="text-content">
+    <h2>Let's Connect</h2>
+
+    <div class="row">
+      <div class="rectangle">
+        <input type="text" id="name" class="input-field" placeholder="Enter your name">
+        <label class="form-label">Enter your name</label>
+      </div>
+      
+    </div>
+    <div class="row">
+      <div class="rectangle">
+        <input type="email" id="email" class="input-field" placeholder="Enter your email">
+        <label class="form-label">Enter your E-mail</label>
+      </div>
+      
+    </div>
+    <div class="row">
+      <div class="rectangle3">
+        <textarea id="message" class="input-field" placeholder="Type your message"></textarea>
+        <label class="form-label" id="message">Type your message</label>
+      </div>
+      
+    </div>
+    <div style="display: flex; justify-content: center; width: 500px;">
+        <button type="button" id="sendButton">Send</button>
+    </div>
+    </div>
+    </div>
+
+    <div class="footer">
+        © 2004 Parth Dhavan. All rights reserved.
+    </div>
+  </body>
+  </html>
